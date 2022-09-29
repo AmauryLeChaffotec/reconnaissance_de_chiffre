@@ -84,8 +84,10 @@ def prediction(frame1):
 
     predict = model.predict(image_chiffre)
     chiffre_predict = np.argmax(predict)
-    tk.Label(frame1, text="").grid(column=1, row=3)
-    tk.Label(frame1, text=chiffre_predict,font=('Times 14')).grid(column=1, row=4)
+    tk.Label(frame1, text=" ").grid(column=1, row=3)
+    tk.Label(frame1, text="prediction :").grid(column=1, row=4)
+    tk.Label(frame1, text=" ").grid(column=1, row=5)
+    tk.Label(frame1, text=chiffre_predict,font=('Times 14')).grid(column=1, row=6)
 
     
     
